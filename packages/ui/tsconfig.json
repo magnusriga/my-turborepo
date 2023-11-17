@@ -1,5 +1,14 @@
 {
   "extends": "tsconfig/react-library.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "noEmit": false,
+    "incremental": true,
+    "outDir": "dist",
+    "declarationDir": "types",
+    "tsBuildInfoFile": ".Cache/tsc.buildinfo.json",
+  },
   "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "exclude": ["dist", "build", ".Cache", "types", "node_modules"]
 }

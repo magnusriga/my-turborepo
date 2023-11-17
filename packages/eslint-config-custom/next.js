@@ -32,6 +32,10 @@ module.exports = {
       typescript: {
         project,
       },
+      exports: {
+        // Accepts the same options as the `resolve.exports` package
+        // See: https://github.com/lukeed/resolve.exports#optionsunsafe
+      },
     },
   },
   ignorePatterns: ["node_modules/", "dist/"],

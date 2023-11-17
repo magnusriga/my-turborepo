@@ -1,5 +1,8 @@
 import Image from "next/image";
-import { Card } from "ui";
+import { Card } from 'ui';
+import { RccButton } from 'ui/rcc-button';
+import { JsRsc } from 'ui/js-rsc';
+import JsComp from './js-comp';
 import styles from "./page.module.css";
 
 function Gradient({
@@ -52,6 +55,8 @@ const LINKS = [
 export default function Page(): JSX.Element {
   return (
     <main className={styles.main}>
+      <RccButton className='tw-font-red'/>
+      <JsRsc className='tw-font-red' />
       <div className={styles.description}>
         <p>
           examples/basic&nbsp;
@@ -92,6 +97,7 @@ export default function Page(): JSX.Element {
             </div>
 
             <div className={styles.logo}>
+              <JsComp />
               <Image
                 alt=""
                 height={120}
